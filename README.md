@@ -26,11 +26,11 @@ Test behaviour not implementation (Don't test spec, test actual behaviour of you
 
 ### Test Granularity Guidelines
 1. Skip unit test when mocking would render them pointless
-⋅⋅⋅example: don't test mutation API endpoint with mocked db function
+* example: don't test mutation API endpoint with mocked db function
 2. Skip unit test when function is "glue" for tested functions
-⋅⋅⋅example: little benefit to testing getStaticProps on its own
+* example: little benefit to testing getStaticProps on its own
 3. Use more granular tests when e2e tests would be overkill
-⋅⋅⋅example: different conditions for ticket component
+* example: different conditions for ticket component
 4. Use more granular tests to aid in diagnosing less granular tests
-⋅⋅⋅example: test API for ticket reservation and e2e for purchasing ticket
+* example: test API for ticket reservation and e2e for purchasing ticket
 5. Minimize e2e tests with Cypress (take a long time to run)
